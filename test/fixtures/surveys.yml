@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  score: 1
+  start_date: 2018-10-06 16:47:47
+  end_date: 2018-10-06 16:47:47
+  max_answers: 1
+  min_answers: 1
+
+two:
+  name: MyString
+  description: MyText
+  score: 1
+  start_date: 2018-10-06 16:47:47
+  end_date: 2018-10-06 16:47:47
+  max_answers: 1
+  min_answers: 1
