@@ -82,4 +82,4 @@ production:
   <<: *default
   database: example_production
   username: rails
-  password: <%= ENV['EXAMPLE_DATABASE_PASSWORD'] %>
+  password: "securepass"
