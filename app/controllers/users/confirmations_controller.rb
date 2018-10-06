@@ -1,6 +1,18 @@
 # frozen_string_literal: true
 
 class Users::ConfirmationsController < Devise::ConfirmationsController
+
+  skip_before_action :verify_authenticity_token
+
+  def activate
+
+    email = params[:email]
+    user = User.find_by_email(email)
+    rand_password = User.random_string(10)
+    user.update(password:rand_password)
+    UserMailer .with(user:user,password:rand_password).activation_email.deliver_now
+    render json:{status:200}, status: :ok
+  end
   # GET /resource/confirmation/new
   # def new
   #   super
