@@ -83,3 +83,4 @@ production:
   database: example_production
   username: rails
   password: "securepass"
+#  password: <%= ENV['EXAMPLE_DATABASE_PASSWORD'] %>
